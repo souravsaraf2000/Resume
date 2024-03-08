@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: #0041c2;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    grid-template-areas: 
+        'first'
+        'second'
+        'third'
+        ;
+    
+}
+
+#first{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    background-color: #fff;
+    grid-area: first;
+}
+
+#sec{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    padding: 0 20px;
+    background-color: #fff;
+    grid-area: second;
+}
+
+#third{
+    background-color: #fff;
+    grid-area: third;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    padding: 0 20px;
+}
+
+#profile{
+    height: 300px;
+    background-image: url('./sourav.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    opacity: 0.8;
+}
+
+#profile h1{
+    margin: 0;
+    height: 50px;
+    color: #fff;
+    padding-left: 10px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+#basics{
+    width: 100%;
+}
+
+.icon{
+    color: #0041c2;
+    position: relative;
+    top: 6px;
+}
+#info{
+    padding-bottom: 10px;
+}
+
+#info div{
+    margin: 10px 0;
+    padding: 0 20px;
+}
+.hr{
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 0 20px;
+}
+
+.hr1{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#skills{
+    padding: 0 20px 10px 20px;
+}
+
+#skills h1{
+    margin: 10px 0;
+}
+
+#skillsInfo div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#skillsInfo div p{
+    margin: 10px;
+}
+
+.content{
+    font-weight: 500;
+    position: relative;
+    top: 3px;
+    padding-left: 15px;
+    font-size: 24px;
+}
+
+#languages{
+    padding: 0 20px 10px 20px;
+}
+
+#languages div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#certifications{
+    padding: 0 20px 10px 20px;
+}
+
+#sca img{
+    height: 85px;
+    width: 80px;
+}
+
+.title{
+    margin: 10px 0;
+}
+
+.duration{
+    color: #0041c2;
+}
+
+.company{
+    margin: 10px 0;
+}
+
+#education{
+    margin-bottom: 30px;
+}
+
+@media (min-width: 600px){
+    #container{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+    'first second second'
+    'first second second'
+    'first third third'
+    'first third third'
+    ;
+    }
+    #email{
+        max-width: 150px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (min-width: 1000px){
+    #email{
+        max-width: 250px;
+    }
+}
+
+/* @media (min-width: 1150px){
+    #email{
+        max-width: 180px;
+    }
+} */
